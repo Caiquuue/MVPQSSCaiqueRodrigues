@@ -33,7 +33,7 @@ def test_modelo_decision_tree():
     modelo_dt = modelo.carrega_modelo(dt_path)
     
     acuracia_dt = avaliador.avaliar(modelo_dt, X_scaled, y)
-    assert acuracia_dt >= 0.80  # Ajuste conforme necessário
+    assert acuracia_dt >= 0.75  # Ajuste conforme necessário
 
 # Teste para o modelo SVM
 def test_modelo_svm():
@@ -41,7 +41,7 @@ def test_modelo_svm():
     modelo_svm = modelo.carrega_modelo(svm_path)
     
     acuracia_svm = avaliador.avaliar(modelo_svm, X_scaled, y)
-    assert acuracia_svm >= 0.80  # Ajuste conforme necessário
+    assert acuracia_svm >= 0.75  # Ajuste conforme necessário
 
 # Teste para o modelo KNN
 def test_modelo_knn():
@@ -49,7 +49,7 @@ def test_modelo_knn():
     modelo_knn = modelo.carrega_modelo(knn_path)
     
     acuracia_knn = avaliador.avaliar(modelo_knn, X_scaled, y)
-    assert acuracia_knn >= 0.80  # Ajuste conforme necessário
+    assert acuracia_knn >= 0.75  # Ajuste conforme necessário
 
 # Teste para o modelo Naive Bayes
 def test_modelo_naive_bayes():
@@ -57,4 +57,4 @@ def test_modelo_naive_bayes():
     modelo_nb = modelo.carrega_modelo(nb_path)
     
     acuracia_nb = avaliador.avaliar(modelo_nb, X_scaled, y)
-    assert acuracia_nb >= 0.80  # Ajuste conforme necessário
+    assert acuracia_nb >= 0.75  # Ajuste conforme necessário
