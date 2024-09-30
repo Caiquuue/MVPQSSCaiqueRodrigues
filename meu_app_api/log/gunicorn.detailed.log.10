@@ -1,0 +1,72 @@
+[2024-09-28 14:15:50,551] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:15:53,456] ERROR log_exception() L1449 Exception on /conhecimento [POST] - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\app.py", line 243, in add_conhecimento
+    with open('./scaler.pkl', 'rb') as scaler_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './scaler.pkl'
+[2024-09-28 14:15:53,472] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:15:53] "[35m[1mPOST /conhecimento HTTP/1.1[0m" 500 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:16:03,922] ERROR log_exception() L1449 Exception on /conhecimento [POST] - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py L1449
+Traceback (most recent call last):
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 1519, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask_cors\extension.py", line 165, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+                                                ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 1517, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask\app.py", line 1503, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask_openapi3\scaffold.py", line 191, in wrapper
+    resp = _do_wrapper(
+           ^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\flask_openapi3\do_wrapper.py", line 135, in _do_wrapper
+    response = func(**request_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\app.py", line 243, in add_conhecimento
+    with open('./scaler.pkl', 'rb') as scaler_file:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: './scaler.pkl'
+[2024-09-28 14:16:03,922] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:16:03] "[35m[1mPOST /conhecimento HTTP/1.1[0m" 500 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:16:41,545] INFO _log() L224   * Detected change in 'C:\\Users\\caaiq\\Desktop\\Pós\\MVPCaiqueRodrigues-main\\MVPCaiqueRodrigues-main\\meu_app_api\\app.py', reloading - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:16:41,686] INFO _log() L224   * Restarting with stat - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:16:48,806] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:16:48] "POST /conhecimento HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:20:31,541] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:20:31] "POST /conhecimento HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:20:46,997] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:20:46] "GET /profissionais HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:20:47,013] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:20:47] "GET /conhecimentos HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:20:47,016] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:20:47] "GET /conhecimentoPorID?id_profissional=3 HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:20:47,018] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:20:47] "GET /conhecimentoPorID?id_profissional=1 HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:20:47,019] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:20:47] "GET /conhecimentoPorID?id_profissional=2 HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:21:44,093] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:21:44] "GET /profissional?nome=Testes%20Automatizados HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:25:12,779] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:25:12] "OPTIONS /profissional?nome=Carlos HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:25:12,780] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:25:12] "OPTIONS /conhecimento?id_profissional=3 HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:25:12,796] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:25:12] "DELETE /conhecimento?id_profissional=3 HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:25:12,806] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:25:12] "DELETE /profissional?nome=Carlos HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
+[2024-09-28 14:25:13,910] INFO _log() L224  127.0.0.1 - - [28/Sep/2024 14:25:13] "GET /conhecimentos HTTP/1.1" 200 - - call_trace=C:\Users\caaiq\Desktop\Pós\MVPCaiqueRodrigues-main\MVPCaiqueRodrigues-main\meu_app_api\env\Lib\site-packages\werkzeug\_internal.py L224 
